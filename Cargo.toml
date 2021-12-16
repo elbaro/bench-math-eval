@@ -1,0 +1,27 @@
+[package]
+name = "bench-math-eval"
+author = "elbaro <elbaro@users.noreply.github.com>"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dev-dependencies]
+criterion = "0.3.5"
+
+[[bench]]
+name = "bench_main"
+harness = false
+
+[dependencies]
+approx = "0.5.0"
+asciimath = "0.8.8"
+evalexpr = "6.6.0"
+exmex = "0.12.0"
+fasteval = "0.2.4"
+kalk = "2.1.2"
+mathew = { version = "0.0.2", features = ["double"] }
+meval = "0.2.0"
+mexprp = "0.3.0"
+rsc = "2.0.0"
+shunting = "0.0.9"
+thin-shunting = "1.0.0"
