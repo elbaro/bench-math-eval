@@ -1,3 +1,5 @@
+# bench-math-eval
+
 A benchmark of math expression parsing & evaluation libraries.
 
 ```sh
@@ -19,9 +21,11 @@ Winners
 
 - arithmetic - fasteval
 - variables - fasteval
-- compiled - thin-shunting
+- compiled - fasteval (meval comes close)
 
 ## Crates
+
+```
              popular  note
 exmex          [v] - bad context interface
 shunting       [ ]
@@ -36,5 +40,6 @@ kalk           [v] - supports rug / bad context interface
 rsc            [v] - bad context interface
 evalexpr       [v]
 mexprp         [ ]
+```
 
 * bad context interface = variable values are supplied with string like `eval("x = 5")` or `set_var("x", "5")`
